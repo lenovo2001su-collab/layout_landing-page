@@ -1,6 +1,8 @@
 @use '../utils/mixin' as *;
 
 .contact-us {
+  font-family: 'Menrope', sans-serif;
+  
   &__content {
     @include pageGrid;
   }
