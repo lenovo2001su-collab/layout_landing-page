@@ -19,7 +19,7 @@
   font-weight: 500;
   line-height: 140%;
   font-size: 16px;
-  color: #1B2129;
+  color: #1b2129;
   scroll-behavior: smooth;
 }
 .page__body {
@@ -83,7 +83,7 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   font-weight: 700;
 }
 .menu__top {
@@ -125,14 +125,14 @@
   text-transform: uppercase;
   width: fit-content;
   padding-bottom: 4px;
-  border-bottom: 1px solid #1B2129;
+  border-bottom: 1px solid #1b2129;
 }
 
 .icon {
   display: block;
   height: 24px;
   width: 24px;
-  background-image: url(/src/images/icon/icon-burger-menu\ \(1\).png);
+  background-image: url(/src/images/icon/icon-burger-menu.png);
   background-size: cover;
 }
 @media (min-width: 576px) {
@@ -145,7 +145,7 @@
   background-image: url(/src/images/icon/icon-phone.png);
 }
 .icon--menu {
-  background-image: url(/src/images/icon/icon-burger-menu\ \(1\).png);
+  background-image: url(/src/images/icon/icon-burger-menu.png);
 }
 .icon--close {
   background-image: url(/src/images/icon/icon-close.png);
@@ -231,7 +231,8 @@
 }
 
 .about-us {
-  background-color: #FCFAEF;
+  margin-inline: -120px;
+  background-color: #fcfaef;
   --colums: 2;
   display: grid;
   column-gap: 20px;
@@ -384,7 +385,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 48px;
-  background: #F9F9F9;
+  background: #f9f9f9;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -397,7 +398,7 @@
   font-weight: 400;
   line-height: 20px;
   padding-left: 16px;
-  color: #7E7E83;
+  color: #7e7e83;
 }
 .contact-us__input:focus, .contact-us__textarea:focus {
   background: #fff;
@@ -438,7 +439,7 @@
   line-height: 140%;
   padding-top: 24px;
   padding-bottom: 8px;
-  color: #9393A3;
+  color: #9393a3;
 }
 .contact-us__info--content {
   font-weight: 500;

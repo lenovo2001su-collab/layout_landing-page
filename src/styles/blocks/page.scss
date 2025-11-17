@@ -8,13 +8,8 @@
   color: vars.$color-text;
   scroll-behavior: smooth;
 
-
-
-
   &__body {
     margin: 0;
-
-
   }
 
   &__menu {
@@ -26,10 +21,9 @@
     opacity: 0;
     pointer-events: none;
 
-
     &:target {
       opacity: 1;
       pointer-events: all;
+    }
   }
-}
 }

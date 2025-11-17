@@ -1,9 +1,10 @@
 @use '../utils/mixin' as *;
 
 .about-us {
-  background-color: #FCFAEF;
-  @include pageGrid;
+  margin-inline: -120px;
+  background-color: #fcfaef;
 
+  @include pageGrid;
 
 
   &__image {
@@ -16,7 +17,6 @@
     background-position: center center;
     background-repeat: no-repeat;
 
-
     margin-bottom: 48px;
 
     @include onTablet {
@@ -26,7 +26,6 @@
     @include onDesctop {
       height: 460px;
     }
-
   }
 
   &__title {
@@ -36,26 +35,20 @@
       grid-column: 1 / 4;
     }
 
-
     @include onDesctop {
       grid-column: span 6;
-
     }
   }
 
   &__content {
-
     grid-column: 1 / -1;
 
     @include onTablet {
       grid-column: 4 / 7;
-
     }
-
 
     @include onDesctop {
       grid-column: span 6;
-
     }
   }
 
@@ -64,6 +57,5 @@
     letter-spacing: 0.15px;
     line-height: 140%;
     margin-bottom: 48px;
-
   }
 }

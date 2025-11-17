@@ -14,9 +14,8 @@
 .category {
   &__photos {
     @include pageGrid;
+
     margin-bottom: 16px;
-
-
   }
 
   &__link {
@@ -27,14 +26,11 @@
     @include onDesctop {
       grid-column: span 6;
     }
-
   }
 
   &__photo {
     width: 100%;
     object-fit: cover;
-
-
   }
 
   &__title {
