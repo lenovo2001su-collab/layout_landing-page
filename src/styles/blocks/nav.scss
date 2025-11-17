@@ -1,0 +1,43 @@
+.menu__nav {
+  margin-bottom: 48px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.nav__link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+
+
+.menu__phone-number {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.menu__call-to-order {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: fit-content;
+
+  padding-bottom: 4px;
+  border-bottom: 1px solid #1B2129;
+
+}
+
