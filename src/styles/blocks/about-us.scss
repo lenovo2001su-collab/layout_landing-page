@@ -2,56 +2,55 @@
 
 .about-us {
   font-family: 'Menrope', sans-serif;
-  
+
   background-color: #fcfaef;
 
 
-  &__container {
-    @include pageGrid;
-  }
-
 
   &__image {
-    grid-column: 1 / -1;
-    height: 200px;
+    object-fit: cover;
     width: 100%;
-
-    background-image: url(/src/images/image-about.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 48px;
+    display: block;
+    aspect-ratio: 16 / 9;
 
     margin-bottom: 48px;
 
     @include onTablet {
       height: 400px;
+      margin-bottom: 120px;
     }
 
     @include onDesctop {
       height: 460px;
+      background-position: center bottom;
     }
   }
 
-  &__title {
+    &__container {
+    @include contentPaddingInline;
+  }
+
+
+  &__content {
+    display: grid;
+
+    @include pageGrid;
+    padding-bottom: 48px;
+    gap: 24px;
+
+  }
+
+    &__title {
   font-size: 32px;
   line-height: 32px;
+  grid-column: span 2;
+  margin: 0;
 
-    grid-column: 1 / -1;
 
     @include onTablet {
       grid-column: 1 / 4;
-    }
-
-    @include onDesctop {
-      grid-column: span 6;
-    }
-  }
-
-  &__content {
-    grid-column: 1 / -1;
-
-    @include onTablet {
-      grid-column: 4 / 7;
     }
 
     @include onDesctop {
@@ -65,6 +64,15 @@
     font-weight: 400;
     letter-spacing: 0.15px;
     line-height: 140%;
-    margin-bottom: 48px;
+    grid-column: span 2;
+
+    @include onTablet {
+      grid-column: 4 / -1;
+    }
+
+    @include onDesctop {
+      grid-column: 7 / -1;
+    }
+
   }
 }
