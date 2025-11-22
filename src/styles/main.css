@@ -473,11 +473,11 @@
   background: #000;
 }
 .contact-us__infos {
-  grid-column: span 4;
+  grid-column: span 2;
 }
 @media (min-width: 1024px) {
   .contact-us__infos {
-    grid-column: 7/-1;
+    grid-column: 8/-1;
   }
 }
 .contact-us__info {

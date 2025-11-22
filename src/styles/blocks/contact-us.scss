@@ -78,10 +78,10 @@
   }
 
   &__infos {
-    grid-column: span 4;
+    grid-column: span 2;
 
     @include onDesctop {
-      grid-column: 7 / -1;
+      grid-column: 8 / -1;
     }
   }
 
