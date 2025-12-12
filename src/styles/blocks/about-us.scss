@@ -2,8 +2,13 @@
 
 .about-us {
   font-family: 'Menrope', sans-serif;
-
   background-color: #fcfaef;
+
+  margin-bottom: 96px;
+
+  @include onTablet {
+    margin-bottom: 120px;
+  }
 
 
 

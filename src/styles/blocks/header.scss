@@ -22,11 +22,20 @@
     font-weight: bold;
     margin: 0;
     line-height: 100%;
-    font-size: 56px;
+    font-size: 36px;
     color: vars.$color-title;
+
+    @include onTablet {
+      font-size: 56px;
+    }
   }
 
   &__bottom {
     padding-bottom: 40px;
+   
+
+    @include onTablet {
+      padding-bottom: 64px;
+    }
   }
 }

@@ -1,12 +1,46 @@
 @use '../utils/mixin' as *;
+@use 'variables' as vars;
 
 .categories {
+  margin-bottom: 96px;
+
+  @include onTablet {
+    margin-bottom: 120px;
+  }
+
   &__wrapper {
     display: grid;
     row-gap: 40px;
 
     @include onTablet {
       row-gap: 56px;
+    }
+  }
+
+  &__button {
+    margin-top: 40px;
+    padding: 14px 0;
+    background-color: vars.$main-button-color;
+    color: vars.$white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+
+    &:hover {
+      background-color: vars.$button-send-color;
+      color: vars.$white;
+    }
+
+    &:active {
+      background-color: vars.$button-send-color;
+      color: vars.$white;
+    }
+
+    @include onTablet {
+      margin-top: 56px;
     }
   }
 }

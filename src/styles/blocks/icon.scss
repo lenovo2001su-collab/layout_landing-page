@@ -4,8 +4,11 @@
   display: block;
   height: 24px;
   width: 24px;
-  background-image: url(/src/images/icon/icon-burger-menu.png);
+  background-position: center;
   background-size: cover;
+
+  @include hover(transform, scale(1.2));
+
 
   @include onTablet {
     height: 32px;
@@ -13,14 +16,18 @@
   }
 
   &--phone {
-    background-image: url(/src/images/icon/icon-phone.png);
+    background-image: url(/src/images/icon/icon-phone-call.svg);
   }
 
   &--menu {
-    background-image: url(/src/images/icon/icon-burger-menu.png);
+    background-image: url(/src/images/icon/icon-burger-menu.svg);
+
+    &:hover {
+      background-image: url(/src/images/icon/icon-burger-menu-hover.svg);
+  }
   }
 
   &--close {
-    background-image: url(/src/images/icon/icon-close.png);
+    background-image: url(/src/images/icon/icon-close.svg);
   }
 }

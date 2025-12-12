@@ -14,10 +14,12 @@
     display: grid;
     grid-column: 1 / -1;
     gap: 16px;
+    margin-bottom: 48px;
 
 
     @include onTablet {
       grid-column: 1 / 7;
+      margin-bottom: 80px;
     }
 
     @include onDesctop {
@@ -28,7 +30,7 @@
 
   &__input,
   &__textarea {
-
+    padding-left: 16px;
     box-sizing: border-box;
     height: 48px;
     background: #f9f9f9;
@@ -65,15 +67,23 @@
     margin-top: 32px;
     padding: 14px 0;
     background: #111;
-    color: #fff;
+    background-color: vars.$main-button-color;
+    color: vars.$white;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background 0.3s;
+    width: 100%;
 
     &:hover {
-      background: #000;
+      background-color: vars.$button-send-color;
+      color: vars.$white;
+    }
+
+    &:active {
+      background-color: vars.$button-send-color;
+      color: vars.$white;
     }
   }
 
@@ -91,11 +101,11 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 140%;
-      padding-top: 24px;
       padding-bottom: 8px;
       color: #9393a3;
     }
     &--content {
+      margin-bottom: 24px;
       font-weight: 500;
       font-size: 16px;
       line-height: 140%;
