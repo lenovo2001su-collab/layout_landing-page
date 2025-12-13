@@ -1,5 +1,6 @@
 @use 'variables' as vars;
 
+
 .page {
   font-family: 'Menrope', sans-serif;
   font-weight: 500;
@@ -8,10 +9,17 @@
   color: vars.$color-text;
   scroll-behavior: smooth;
 
+
   &__body {
     margin: 0;
     min-width: 320px;
+
+    &:has(.menu:target) {
+      overflow: hidden;
+}
   }
+
+
 
   &__menu {
     position: fixed;
