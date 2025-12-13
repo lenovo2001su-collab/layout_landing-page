@@ -30,7 +30,7 @@
 
   &__input,
   &__textarea {
-    color: #7E7E83;
+    color: vars.$imput-text-color;
     font-family: 'Menrope', sans-serif;
     padding-left: 16px;
     box-sizing: border-box;
@@ -40,7 +40,6 @@
     border-radius: 8px;
     font-size: 16px;
     outline: none;
-    color: #111;
     transition: box-shadow 0.3s ease;
     border-color: 0.3s ease;
 
@@ -92,8 +91,19 @@
   &__infos {
     grid-column: span 2;
 
+
     @include onDesctop {
       grid-column: 8 / -1;
+    }
+
+
+    &--link {
+      font-family: 'Menrope', sans-serif;
+      text-decoration: none;
+      color: #191919;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
     }
   }
 
@@ -108,10 +118,6 @@
     }
     &--content {
       margin-bottom: 24px;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 140%;
-      color: #191919;
     }
   }
 }

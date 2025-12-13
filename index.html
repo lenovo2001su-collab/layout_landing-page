@@ -274,13 +274,17 @@
                 </div>
                 <h3 class="category__title">Smart Home</h3>
               </article>
+
+              <button
+                    class="categories__button"
+                    type="submit"
+                    onsubmit="this.reset(); return false"
+                        >
+                        View all
+              </button>
+
             </div>
-            <button
-                  class="contact-us__button"
-                  type="submit"
-                      >
-                      View all
-            </button>
+
           </section>
         </div>
 
@@ -340,6 +344,7 @@
                 <button
                             class="contact-us__button"
                             type="submit"
+                            onsubmit="this.reset(); return false"
                           >
                             Send
                 </button>
@@ -349,22 +354,26 @@
               <div class="contact-us__infos">
                 <h3 class="contact-us__info contact-us__info--title">Phone</h3>
                 <p class="contact-us__info contact-us__info--content">
-                      + 1 234 5555-55-55
+                  <a href="tel: +1 234 5555-55-55"
+                          class="contact-us__infos--link">+1 234 5555-55-55</a>
                 </p>
                 <h3 class="contact-us__info contact-us__info--title">Email</h3>
                 <p class="contact-us__info contact-us__info--content">
-                      hello@bang&olufsen.com
+                  <a href="mailto: hello@bang&olufsen.com"
+                      class="contact-us__infos--link">hello@bang&olufsen.com</a>
                 </p>
                 <h3 class="contact-us__info contact-us__info--title">
                       Address
                 </h3>
-                <p class="contact-us__info contact-us__info--content">
-                      400 first ave.
-                  <br />
-                      suite 700
-                  <br />
-                      Minneapolis, MN 55401
-                </p>
+                <a href="https://www.google.com/maps/search/?api=1&query=400+first+ave+suite+700+Minneapolis+MN+55401" class="contact-us__infos--link">
+                  <p class="contact-us__info contact-us__info--content">
+                        400 first ave.
+                    <br />
+                        suite 700
+                    <br />
+                        Minneapolis, MN 55401
+                  </p>
+                </a>
               </div>
             </div>
           </section>

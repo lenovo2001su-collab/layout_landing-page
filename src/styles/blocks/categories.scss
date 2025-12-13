@@ -9,6 +9,7 @@
   }
 
   &__wrapper {
+
     display: grid;
     row-gap: 40px;
 
@@ -17,8 +18,10 @@
     }
   }
 
+
+
   &__button {
-    margin-top: 40px;
+
     padding: 14px 0;
     background-color: vars.$main-button-color;
     color: vars.$white;
@@ -29,6 +32,11 @@
     transition: background 0.3s;
     width: 100%;
 
+
+    @include onDesctop {
+
+    }
+
     &:hover {
       background-color: vars.$button-send-color;
       color: vars.$white;
@@ -37,10 +45,6 @@
     &:active {
       background-color: vars.$button-send-color;
       color: vars.$white;
-    }
-
-    @include onTablet {
-      margin-top: 56px;
     }
   }
 }
@@ -63,6 +67,7 @@
   }
 
   &__photo {
+    @include hover(transform, scale(1.2));
     width: 100%;
     object-fit: cover;
   }

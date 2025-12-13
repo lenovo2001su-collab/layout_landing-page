@@ -16,7 +16,7 @@
 
 .page {
   font-family: "Menrope", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 140%;
   font-size: 16px;
   color: #1b2129;
@@ -461,7 +461,6 @@
   }
 }
 .categories__button {
-  margin-top: 40px;
   padding: 14px 0;
   background-color: #f98921;
   color: #fff;
@@ -479,11 +478,6 @@
 .categories__button:active {
   background-color: #1b2129;
   color: #fff;
-}
-@media (min-width: 576px) {
-  .categories__button {
-    margin-top: 56px;
-  }
 }
 
 .category__photos {
@@ -515,6 +509,12 @@
   .category__link {
     grid-column: span 6;
   }
+}
+.category__photo {
+  transition: transform 0.3s;
+}
+.category__photo:hover {
+  transform: scale(1.2);
 }
 .category__photo {
   width: 100%;
@@ -567,7 +567,7 @@
   }
 }
 .contact-us__input, .contact-us__textarea {
-  color: #7E7E83;
+  color: #7e7e83;
   font-family: "Menrope", sans-serif;
   padding-left: 16px;
   box-sizing: border-box;
@@ -577,7 +577,6 @@
   border-radius: 8px;
   font-size: 16px;
   outline: none;
-  color: #111;
   transition: box-shadow 0.3s ease;
   border-color: 0.3s ease;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
@@ -626,6 +625,14 @@
     grid-column: 8/-1;
   }
 }
+.contact-us__infos--link {
+  font-family: "Menrope", sans-serif;
+  text-decoration: none;
+  color: #191919;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
 .contact-us__info {
   margin: 0;
 }
@@ -638,10 +645,6 @@
 }
 .contact-us__info--content {
   margin-bottom: 24px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 140%;
-  color: #191919;
 }
 
 /*# sourceMappingURL=main.css.map */
