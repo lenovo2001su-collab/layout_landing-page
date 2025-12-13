@@ -2,6 +2,7 @@
 @use 'variables' as vars;
 
 .section-title {
+  grid-column: 1 / -1;
   font-family: 'Menrope', sans-serif;
   margin: 0;
   margin-bottom: 48px;

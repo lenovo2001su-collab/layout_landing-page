@@ -235,6 +235,7 @@
 }
 
 .section-title {
+  grid-column: 1/-1;
   font-family: "Menrope", sans-serif;
   margin: 0;
   margin-bottom: 48px;
@@ -445,6 +446,8 @@
 
 .categories {
   margin-bottom: 96px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 @media (min-width: 576px) {
   .categories {
@@ -452,6 +455,7 @@
   }
 }
 .categories__wrapper {
+  grid-column: 1/-1;
   display: grid;
   row-gap: 40px;
 }
@@ -461,6 +465,8 @@
   }
 }
 .categories__button {
+  margin-top: 40px;
+  grid-column: 1/-1;
   padding: 14px 0;
   background-color: #f98921;
   color: #fff;
@@ -470,6 +476,16 @@
   cursor: pointer;
   transition: background 0.3s;
   width: 100%;
+}
+@media (min-width: 576px) {
+  .categories__button {
+    margin-top: 56px;
+  }
+}
+@media (min-width: 1024px) {
+  .categories__button {
+    grid-column: 1/5;
+  }
 }
 .categories__button:hover {
   background-color: #1b2129;
